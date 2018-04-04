@@ -19,8 +19,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ServiceToggle" />
-
         <activity android:name=".InvisibleServiceActivity" android:theme="@style/Base.Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.PROCESS_TEXT" />
@@ -30,11 +28,6 @@
                 <data android:mimeType="text/*" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".SpeakService"
-            android:enabled="true"
-            android:exported="true" />
     </application>
 
 </manifest>
