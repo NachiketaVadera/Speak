@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Speak</string>
+    <string name="tv_explanation">When you press Start, a background task will be launched which will enable you to hear selected text without exiting your current application. When you press Stop, the background task will terminate.</string>
 </resources>

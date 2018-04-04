@@ -9,21 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
-        <activity android:name=".MainActivity" android:windowSoftInputMode="stateAlwaysVisible">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysVisible">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
 
+        <activity android:name=".ServiceToggle" />
+
+        <activity android:name=".InvisibleServiceActivity" android:theme="@style/Base.Theme.Transparent">
             <intent-filter>
-                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="text/*"/>
+                <data android:mimeType="text/*" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".SpeakService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
