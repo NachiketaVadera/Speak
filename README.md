@@ -58,5 +58,4 @@ Any help, including feedback, is highly appriciated. I have just started out wit
 Once staretd, an app can never be completely finished. 
 
 1. Custom settings for the voice.
-2. Creating a service.
 3. Move on from text selections to files.
