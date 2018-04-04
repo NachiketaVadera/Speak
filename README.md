@@ -58,4 +58,6 @@ Any help, including feedback, is highly appriciated. I have just started out wit
 Once staretd, an app can never be completely finished. 
 
 1. Custom settings for the voice.
-3. Move on from text selections to files.
+2. Move on from text selections to files.
+3. Add new Speak features (read out jokes, facts, quotes etc).
+4. Read notofications and messaged aloud. 
