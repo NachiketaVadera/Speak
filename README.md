@@ -10,6 +10,19 @@ The base of this project is Android Text to Speech. While reading, I come across
 
 Taking advantage of this feature, this app passes the selected text to itself and speaks it out.
 
+## Downloads
+
+Download the .apk file or the source code here.
+
+Apk : 
+![Speak.apk](https://github.com/NachiketaVadera/Speak/releases/download/v1.0/nachiketaVadera-Speak-v1.0.apk)
+
+Zip :
+![Speak.zip](https://github.com/NachiketaVadera/Speak/archive/v1.0.zip)
+
+Tar.gz :
+![Speak.tar.gz](https://github.com/NachiketaVadera/Speak/archive/v1.0.tar.gz)
+
 ## Code
 
 The majority of the code is written in Java and is simple. For enabling custom text selection:
