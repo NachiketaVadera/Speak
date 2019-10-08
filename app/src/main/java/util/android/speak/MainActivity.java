@@ -2,11 +2,12 @@ package util.android.speak;
 
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
@@ -22,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        linearLayout = (LinearLayout) findViewById(R.id.llParent);
-        editText = (EditText) findViewById(R.id.etText);
+        linearLayout = findViewById(R.id.llParent);
+        editText = findViewById(R.id.etText);
 
         textToSpeech = new TextToSpeech(this,this);
         textToSpeech.setLanguage(Locale.ENGLISH);
