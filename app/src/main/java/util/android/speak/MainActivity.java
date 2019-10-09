@@ -1,5 +1,6 @@
 package util.android.speak;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
     public static final String TAG = "__Speak__";
 
+    private static final String PREFERENCE_NAME = "preference_file";
+
     private EditText editText = null;
     private TextToSpeech textToSpeech = null;
 
@@ -21,6 +24,12 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences settings = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
+        if (settings.getBoolean("firstRun", true)) {
+            Log.i(TAG, "onCreate: First Run.");
+            showWelcomeDialog();
+        }
 
         findViewById(R.id.llParent).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
         textToSpeech = new TextToSpeech(this, this);
         textToSpeech.setLanguage(Locale.ENGLISH);
+    }
+
+    private void showWelcomeDialog() {
+        // instruction dialog creation
     }
 
     @Override
