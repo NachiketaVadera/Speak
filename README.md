@@ -71,7 +71,4 @@ Any help, including feedback, is highly appreciated. I have just started out wit
 
 Once started, an app can never be completely finished. 
 
-1. Custom settings for the voice.
-2. Move on from text selections to files.
-3. Add new Speak features (read out jokes, facts, quotes etc).
-4. Read notifications and messaged aloud. 
+* Try to make a service out of the app.
