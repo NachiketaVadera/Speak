@@ -26,7 +26,8 @@ public class InvisibleServiceActivity extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 textToSpeech.setLanguage(Locale.ENGLISH);
-                textToSpeech.speak(receivedText,TextToSpeech.QUEUE_FLUSH,null,"serviceTextToSpeech");
+                textToSpeech.speak(receivedText,TextToSpeech.QUEUE_FLUSH,null,
+                        "serviceTextToSpeech");
                 finish();
             }
         });
