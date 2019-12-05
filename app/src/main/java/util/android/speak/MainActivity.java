@@ -15,14 +15,10 @@ import androidx.appcompat.app.AppCompatDelegate;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements TextToSpeech.OnInitListener  {
-
     public static final String TAG = "__Speak__";
-
     private static final String PREFERENCE_NAME = "preference_file";
-
     private EditText editText = null;
     private TextToSpeech textToSpeech = null;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                 Toast.makeText(MainActivity.this, "left", Toast.LENGTH_SHORT).show();
             }
             public void onSwipeBottom() {
-                Toast.makeText(MainActivity.this, "bottom", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "bottom and edit text clear", Toast.LENGTH_SHORT).show();
+                editText.setText("");
             }
 
         });
