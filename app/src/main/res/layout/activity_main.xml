@@ -7,20 +7,28 @@
     android:orientation="vertical"
     android:id="@+id/parentLayout"
     android:background="@color/background">
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_element"
+            android:inputType="textMultiLine"
+            android:focusedByDefault="true"
+            android:hint="@string/et_hint_search"
+            android:textAlignment="center"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
 
-    <EditText
-        android:id="@+id/etText"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_spk"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:background="@drawable/rounded_element"
-        android:inputType="textMultiLine"
-        android:focusedByDefault="true"
-        android:hint="@string/et_hint_search"
-        android:textAlignment="center"
-        android:importantForAutofill="no"
-        tools:ignore="LabelFor" />
+        android:background="@drawable/ic_speaking"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+         />
 
 </RelativeLayout>
