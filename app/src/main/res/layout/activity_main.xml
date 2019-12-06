@@ -29,6 +29,6 @@
         android:background="@drawable/ic_speaking"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="speak" />
+         />
 
 </RelativeLayout>

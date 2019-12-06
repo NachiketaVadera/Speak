@@ -19,11 +19,12 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     private static final String PREFERENCE_NAME = "preference_file";
     private EditText editText = null;
     private TextToSpeech textToSpeech = null;
+    private BackButtonPressHandler backButtonPressHandler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        backButtonPressHandler=new BackButtonPressHandler(this);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         SharedPreferences settings = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
@@ -67,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     public void onInit(int status) {
         Log.i(TAG, "onInit: TextToSpeech Init with status " + status);
     }
-
+    @Override
+    public void onBackPressed(){
+        backButtonPressHandler.onBackPressed();
+    }
 
 }
